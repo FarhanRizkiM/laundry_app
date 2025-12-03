@@ -27,7 +27,15 @@
                 </li>
                 <li class="nav-small-cap">
                     <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-                    <span class="hide-menu">Menu</span>
+                    <span class="hide-menu">Operasional</span>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="./ui-buttons.html" aria-expanded="false">
+                        <span>
+                            <i class="ti ti-user"></i>
+                        </span>
+                        <span class="hide-menu">Data Pelanggan</span>
+                    </a>
                 </li>
                 <li class="sidebar-item">
                     <a class="sidebar-link" href="./ui-buttons.html" aria-expanded="false">
@@ -53,13 +61,9 @@
                         <span class="hide-menu">Logistik</span>
                     </a>
                 </li>
-                <li class="sidebar-item">
-                    <a class="sidebar-link" href="./ui-forms.html" aria-expanded="false">
-                        <span>
-                            <i class="ti ti-database"></i>
-                        </span>
-                        <span class="hide-menu">Master Data</span>
-                    </a>
+                <li class="nav-small-cap">
+                    <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                    <span class="hide-menu">Manajemen</span>
                 </li>
                 <li class="sidebar-item">
                     <a class="sidebar-link" href="./ui-typography.html" aria-expanded="false">
@@ -67,6 +71,14 @@
                             <i class="ti ti-file-description"></i>
                         </span>
                         <span class="hide-menu">Laporan</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="./ui-forms.html" aria-expanded="false">
+                        <span>
+                            <i class="ti ti-database"></i>
+                        </span>
+                        <span class="hide-menu">Master Data</span>
                     </a>
                 </li>
                 <!-- <li class="nav-small-cap">
