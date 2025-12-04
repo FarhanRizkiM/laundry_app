@@ -313,6 +313,7 @@
 
           <div class="card w-100 position-relative overflow-hidden">
             <div class="card-body p-4">
+              <!-- Navigasi Logistik Start -->
               <ul
                 class="nav nav-pills mb-4 gap-2"
                 id="pills-tab"
@@ -344,15 +345,33 @@
                     role="tab"
                   >
                     <i class="ti ti-motorbike fs-5"></i>
-                    <span class="fw-bold">Sedang Jalan</span>
-                    <span class="badge bg-warning text-dark ms-1 rounded-pill"
+                    <span class="fw-bold">Sedang Antar</span>
+                    <span class="badge bg-warning text-white ms-1 rounded-pill"
+                      >1</span
+                    >
+                  </button>
+                </li>
+                <li class="nav-item flex-fill" role="presentation">
+                  <button
+                    class="nav-link w-100 py-3 rounded-3 d-flex align-items-center justify-content-center gap-2 shadow-sm"
+                    id="pills-jalan-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-selesai"
+                    type="button"
+                    role="tab"
+                  >
+                    <i class="ti ti-circle-check fs-5"></i>
+                    <span class="fw-bold">Selesai Antar</span>
+                    <span class="badge bg-success text-white ms-1 rounded-pill"
                       >1</span
                     >
                   </button>
                 </li>
               </ul>
+              <!-- Navigasi Logistik End -->
 
               <div class="tab-content" id="pills-tabContent">
+                <!-- Logistik Kurir Antar Start -->
                 <div
                   class="tab-pane fade show active"
                   id="pills-siap"
@@ -360,89 +379,156 @@
                 >
                   <div class="row g-4">
                     <div class="col-md-6 col-lg-4">
+                      <!-- Kurir Antar 1 Start -->
                       <div
-                        class="card card-premium h-100 position-relative overflow-hidden"
+                        class="card h-100 position-relative overflow-hidden border-0"
+                        style="
+                          border-radius: 24px;
+                          box-shadow: 0 20px 45px rgba(15, 23, 42, 0.06);
+                        "
                       >
+                        <!-- Strip kiri biru -->
                         <div
                           class="position-absolute top-0 start-0 h-100"
-                          style="width: 6px; background: #13deb9"
+                          style="
+                            width: 6px;
+                            background: linear-gradient(
+                              to bottom,
+                              #5d87ff,
+                              #dbe5ff
+                            );
+                          "
                         ></div>
 
                         <div
                           class="card-body p-4 d-flex flex-column"
-                          style="height: 380px"
+                          style="height: 420px"
                         >
+                          <!-- Header: INV + status -->
                           <div
-                            class="d-flex justify-content-between align-items-start mb-3"
+                            class="d-flex justify-content-between align-items-center mb-3 ps-1"
                           >
                             <span
-                              class="badge bg-light-success text-success border border-success border-opacity-25 rounded-1"
-                              >#INV-005</span
+                              class="badge rounded-pill px-3 py-1"
+                              style="
+                                background-color: #eef2ff;
+                                color: #3b5bdb;
+                                border: 1px solid rgba(93, 135, 255, 0.25);
+                                font-size: 0.75rem;
+                              "
                             >
-                            <span class="badge bg-success text-white rounded-1"
-                              >READY</span
+                              #INV-006
+                            </span>
+
+                            <span
+                              class="badge rounded-pill px-3 py-1 fw-semibold"
+                              style="
+                                background-color: #5d87ff;
+                                color: #ffffff;
+                                font-size: 0.75rem;
+                              "
                             >
+                              SIAP DIANTAR
+                            </span>
                           </div>
 
-                          <div class="mb-3">
-                            <h5 class="fw-bold text-dark mb-1">Pak RT</h5>
+                          <!-- Avatar + nama -->
+                          <div class="text-center mb-3">
                             <div
-                              class="d-flex align-items-center text-muted small mb-2"
+                              class="rounded-circle d-inline-flex align-items-center justify-content-center mb-2"
+                              style="
+                                width: 56px;
+                                height: 56px;
+                                background: radial-gradient(
+                                  circle at 30% 20%,
+                                  #eef2ff,
+                                  #5d87ff20
+                                );
+                                color: #5d87ff;
+                                font-weight: 700;
+                              "
                             >
-                              <i class="ti ti-phone me-1"></i> 0812-3456-7890
+                              B
                             </div>
-
+                            <h5 class="fw-bold text-dark mb-0">Bu Siti</h5>
                             <div
-                              class="bg-light-warning text-dark p-3 rounded-3 border border-warning border-opacity-25"
+                              class="d-flex align-items-center justify-content-center mt-1"
                             >
-                              <div class="d-flex align-items-start gap-2">
-                                <i class="ti ti-map-pin text-danger mt-1"></i>
-                                <div>
-                                  <small
-                                    class="text-muted d-block fw-bold text-uppercase"
-                                    style="font-size: 0.65rem"
-                                    >Alamat Tujuan</small
-                                  >
-                                  <span
-                                    class="fw-bold"
-                                    style="font-size: 0.9rem"
-                                    >Jl. Mawar No. 10, RT 05/02 (Pagar
-                                    Hitam)</span
-                                  >
-                                </div>
-                              </div>
-                              <a
-                                href="https://maps.google.com"
-                                target="_blank"
-                                class="btn btn-sm btn-warning w-100 mt-2 rounded-pill fw-bold"
-                              >
-                                <i class="ti ti-map-2 me-1"></i> Buka Maps
-                              </a>
+                              <i class="ti ti-phone me-1 text-muted"></i>
+                              <small class="text-muted">0812-3456-7890</small>
                             </div>
                           </div>
 
+                          <!-- Alamat tujuan (simple & clean) -->
                           <div
-                            class="d-flex justify-content-between align-items-center mb-4 border-top pt-2"
+                            class="p-3 rounded-4 mb-3"
+                            style="
+                              background-color: #f5f7ff;
+                              border: 1px solid rgba(93, 135, 255, 0.15);
+                            "
+                          >
+                            <small
+                              class="text-muted text-uppercase fw-semibold d-block mb-1"
+                              style="font-size: 0.65rem"
+                            >
+                              Alamat Tujuan
+                            </small>
+
+                            <div class="d-flex align-items-start gap-2 mb-2">
+                              <i class="ti ti-map-pin text-primary mt-1"></i>
+                              <span style="font-size: 0.8rem">
+                                Jl. Melati No. 5 (Depan Pos Satpam)
+                              </span>
+                            </div>
+
+                            <a
+                              href="https://maps.google.com"
+                              target="_blank"
+                              class="btn btn-sm w-100 rounded-pill fw-semibold"
+                              style="
+                                background-color: #ffae1f;
+                                color: #fff;
+                                font-size: 0.8rem;
+                              "
+                            >
+                              <i class="ti ti-map-2 me-1"></i> Buka Maps
+                            </a>
+                          </div>
+
+                          <!-- Tagihan -->
+                          <div
+                            class="d-flex justify-content-between align-items-center mb-3 border-top pt-2 ps-1"
                           >
                             <small class="text-muted">Tagihan</small>
                             <span
-                              class="badge bg-light-danger text-danger fw-bold fs-3"
-                              >Belum Lunas (Rp 35.000)</span
+                              class="badge rounded-pill px-3 py-1"
+                              style="
+                                background-color: #fff1f1;
+                                color: #f04438;
+                                font-size: 0.75rem;
+                              "
                             >
+                              Belum Lunas (Rp 35.000)
+                            </span>
                           </div>
 
-                          <div class="mt-auto">
+                          <!-- Slider: Paket diterima? -->
+                          <div class="mt-auto ps-1">
                             <div
-                              class="slider-container position-relative bg-white rounded-pill overflow-hidden border border-success"
-                              style="height: 50px"
-                              data-color="#13deb9"
+                              class="slider-container position-relative bg-white rounded-pill overflow-hidden"
+                              style="
+                                height: 52px;
+                                border: 1px solid rgba(93, 135, 255, 0.55);
+                              "
+                              data-color="#5d87ff"
                             >
                               <div
-                                class="slider-text position-absolute w-100 h-100 d-flex align-items-center justify-content-center fw-bold small"
+                                class="slider-text position-absolute w-100 h-100 d-flex align-items-center justify-content-center fw-semibold small"
                                 style="z-index: 1; pointer-events: none"
                               >
-                                GESER: AMBIL BARANG
+                                GESER UNTUK DIANTAR
                               </div>
+
                               <input
                                 type="range"
                                 class="form-range slider-action w-100 h-100 position-absolute opacity-0"
@@ -452,114 +538,584 @@
                                 step="1"
                                 style="z-index: 5; cursor: pointer"
                               />
+
                               <div
                                 class="slider-fill h-100 position-absolute top-0 start-0 rounded-pill"
                                 style="
                                   width: 0%;
-                                  background-color: #13deb9;
+                                  background-color: #5d87ff;
                                   transition: width 0.05s;
                                 "
                               ></div>
+
                               <div
-                                class="slider-thumb bg-white border border-success rounded-circle position-absolute top-50 translate-middle-y shadow-sm d-flex align-items-center justify-content-center"
+                                class="slider-thumb bg-white rounded-circle position-absolute top-50 translate-middle-y shadow-sm d-flex align-items-center justify-content-center"
                                 style="
                                   width: 42px;
                                   height: 42px;
                                   left: 4px;
                                   transition: left 0.05s;
                                   z-index: 4;
-                                  color: #13deb9;
+                                  color: #5d87ff;
+                                  border: 1px solid rgba(93, 135, 255, 0.7);
                                 "
                               >
-                                <i class="ti ti-package fs-5"></i>
+                                <i class="ti ti-check fs-5"></i>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
+                      <!-- Kurir Antar 1 End -->
                     </div>
-                  </div>
-                </div>
-
-                <div class="tab-pane fade" id="pills-jalan" role="tabpanel">
-                  <div class="row g-4">
                     <div class="col-md-6 col-lg-4">
+                      <!-- Kurir Antar 2 Start -->
                       <div
-                        class="card card-premium h-100 position-relative overflow-hidden"
+                        class="card h-100 position-relative overflow-hidden border-0"
+                        style="
+                          border-radius: 24px;
+                          box-shadow: 0 20px 45px rgba(15, 23, 42, 0.06);
+                        "
                       >
+                        <!-- Strip kiri biru -->
                         <div
                           class="position-absolute top-0 start-0 h-100"
-                          style="width: 6px; background: #5d87ff"
+                          style="
+                            width: 6px;
+                            background: linear-gradient(
+                              to bottom,
+                              #5d87ff,
+                              #dbe5ff
+                            );
+                          "
                         ></div>
 
                         <div
                           class="card-body p-4 d-flex flex-column"
-                          style="height: 380px"
+                          style="height: 420px"
                         >
+                          <!-- Header: INV + status -->
                           <div
-                            class="d-flex justify-content-between align-items-start mb-3"
+                            class="d-flex justify-content-between align-items-center mb-3 ps-1"
                           >
                             <span
-                              class="badge bg-light-primary text-primary border border-primary border-opacity-25 rounded-1"
-                              >#INV-006</span
+                              class="badge rounded-pill px-3 py-1"
+                              style="
+                                background-color: #eef2ff;
+                                color: #3b5bdb;
+                                border: 1px solid rgba(93, 135, 255, 0.25);
+                                font-size: 0.75rem;
+                              "
                             >
-                            <span class="badge bg-primary text-white rounded-1"
-                              >OTW</span
+                              #INV-006
+                            </span>
+
+                            <span
+                              class="badge rounded-pill px-3 py-1 fw-semibold"
+                              style="
+                                background-color: #5d87ff;
+                                color: #ffffff;
+                                font-size: 0.75rem;
+                              "
                             >
+                              SIAP DIANTAR
+                            </span>
                           </div>
 
-                          <div class="mb-3">
-                            <h5 class="fw-bold text-dark mb-1">Bu Siti</h5>
-                            <div class="d-flex gap-2 mb-3">
-                              <a
-                                href="https://wa.me/628123456789"
-                                target="_blank"
-                                class="btn btn-sm btn-success rounded-pill px-3"
-                              >
-                                <i class="ti ti-brand-whatsapp me-1"></i> Chat
-                                WA
-                              </a>
-                              <a
-                                href="tel:08123456789"
-                                class="btn btn-sm btn-outline-primary rounded-pill px-3"
-                              >
-                                <i class="ti ti-phone me-1"></i> Telepon
-                              </a>
+                          <!-- Avatar + nama -->
+                          <div class="text-center mb-3">
+                            <div
+                              class="rounded-circle d-inline-flex align-items-center justify-content-center mb-2"
+                              style="
+                                width: 56px;
+                                height: 56px;
+                                background: radial-gradient(
+                                  circle at 30% 20%,
+                                  #eef2ff,
+                                  #5d87ff20
+                                );
+                                color: #5d87ff;
+                                font-weight: 700;
+                              "
+                            >
+                              B
                             </div>
-
-                            <div class="bg-light p-3 rounded-3 border">
-                              <div class="d-flex align-items-start gap-2">
-                                <i class="ti ti-map-pin text-danger mt-1"></i>
-                                <span class="fw-bold text-dark small"
-                                  >Jl. Melati No. 5 (Depan Pos Satpam)</span
-                                >
-                              </div>
+                            <h5 class="fw-bold text-dark mb-0">Bu Siti</h5>
+                            <div
+                              class="d-flex align-items-center justify-content-center mt-1"
+                            >
+                              <i class="ti ti-phone me-1 text-muted"></i>
+                              <small class="text-muted">0812-3456-7890</small>
                             </div>
                           </div>
 
+                          <!-- Alamat tujuan (simple & clean) -->
                           <div
-                            class="d-flex justify-content-between align-items-center mb-4 border-top pt-2"
+                            class="p-3 rounded-4 mb-3"
+                            style="
+                              background-color: #f5f7ff;
+                              border: 1px solid rgba(93, 135, 255, 0.15);
+                            "
+                          >
+                            <small
+                              class="text-muted text-uppercase fw-semibold d-block mb-1"
+                              style="font-size: 0.65rem"
+                            >
+                              Alamat Tujuan
+                            </small>
+
+                            <div class="d-flex align-items-start gap-2 mb-2">
+                              <i class="ti ti-map-pin text-primary mt-1"></i>
+                              <span style="font-size: 0.8rem">
+                                Jl. Melati No. 5 (Depan Pos Satpam)
+                              </span>
+                            </div>
+
+                            <a
+                              href="https://maps.google.com"
+                              target="_blank"
+                              class="btn btn-sm w-100 rounded-pill fw-semibold"
+                              style="
+                                background-color: #ffae1f;
+                                color: #fff;
+                                font-size: 0.8rem;
+                              "
+                            >
+                              <i class="ti ti-map-2 me-1"></i> Buka Maps
+                            </a>
+                          </div>
+
+                          <!-- Tagihan -->
+                          <div
+                            class="d-flex justify-content-between align-items-center mb-3 border-top pt-2 ps-1"
                           >
                             <small class="text-muted">Tagihan</small>
                             <span
-                              class="badge bg-light-success text-success fw-bold fs-3"
-                              >LUNAS</span
+                              class="badge rounded-pill px-3 py-1"
+                              style="
+                                background-color: #e6fff7;
+                                color: #16a34a;
+                                font-size: 0.75rem;
+                              "
                             >
+                              LUNAS
+                            </span>
                           </div>
 
-                          <div class="mt-auto">
-                            <button
-                              class="btn btn-primary w-100 py-3 rounded-pill fw-bold shadow-sm"
-                              onclick="return confirm('Barang sudah diterima customer?')"
+                          <!-- Slider: Paket diterima? -->
+                          <div class="mt-auto ps-1">
+                            <div
+                              class="slider-container position-relative bg-white rounded-pill overflow-hidden"
+                              style="
+                                height: 52px;
+                                border: 1px solid rgba(93, 135, 255, 0.55);
+                              "
+                              data-color="#5d87ff"
                             >
-                              <i class="ti ti-check me-2"></i> PAKET DITERIMA
+                              <div
+                                class="slider-text position-absolute w-100 h-100 d-flex align-items-center justify-content-center fw-semibold small"
+                                style="z-index: 1; pointer-events: none"
+                              >
+                                GESER UNTUK DIANTAR
+                              </div>
+
+                              <input
+                                type="range"
+                                class="form-range slider-action w-100 h-100 position-absolute opacity-0"
+                                min="0"
+                                max="100"
+                                value="0"
+                                step="1"
+                                style="z-index: 5; cursor: pointer"
+                              />
+
+                              <div
+                                class="slider-fill h-100 position-absolute top-0 start-0 rounded-pill"
+                                style="
+                                  width: 0%;
+                                  background-color: #5d87ff;
+                                  transition: width 0.05s;
+                                "
+                              ></div>
+
+                              <div
+                                class="slider-thumb bg-white rounded-circle position-absolute top-50 translate-middle-y shadow-sm d-flex align-items-center justify-content-center"
+                                style="
+                                  width: 42px;
+                                  height: 42px;
+                                  left: 4px;
+                                  transition: left 0.05s;
+                                  z-index: 4;
+                                  color: #5d87ff;
+                                  border: 1px solid rgba(93, 135, 255, 0.7);
+                                "
+                              >
+                                <i class="ti ti-check fs-5"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Kurir Antar 2 End -->
+                    </div>
+                  </div>
+                </div>
+                <!-- Logistik Kurir Antar End -->
+
+                <!-- Logistik Kurir Sedang Jalan Start -->
+                <div class="tab-pane fade" id="pills-jalan" role="tabpanel">
+                  <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                      <!-- Kurir Sedang Jalan 1 Start -->
+                      <div
+                        class="card h-100 position-relative overflow-hidden border-0"
+                        style="
+                          border-radius: 24px;
+                          box-shadow: 0 20px 45px rgba(15, 23, 42, 0.06);
+                        "
+                      >
+                        <!-- Strip kiri biru -->
+                        <div
+                          class="position-absolute top-0 start-0 h-100"
+                          style="
+                            width: 6px;
+                            background: linear-gradient(
+                              to bottom,
+                              #ffae1f,
+                              #fff
+                            );
+                          "
+                        ></div>
+
+                        <div
+                          class="card-body p-4 d-flex flex-column"
+                          style="height: 420px"
+                        >
+                          <!-- Header: INV + status -->
+                          <div
+                            class="d-flex justify-content-between align-items-center mb-3 ps-1"
+                          >
+                            <span
+                              class="badge rounded-pill px-3 py-1"
+                              style="
+                                background-color: #eef2ff;
+                                color: #ffae1f;
+                                border: 1px solid rgba(93, 135, 255, 0.25);
+                                font-size: 0.75rem;
+                              "
+                            >
+                              #INV-006
+                            </span>
+
+                            <span
+                              class="badge rounded-pill px-3 py-1 fw-semibold"
+                              style="
+                                background-color: #ffae1f;
+                                color: #ffffff;
+                                font-size: 0.75rem;
+                              "
+                            >
+                              SEDANG DIANTAR
+                            </span>
+                          </div>
+
+                          <!-- Avatar + nama -->
+                          <div class="text-center mb-3">
+                            <div
+                              class="rounded-circle d-inline-flex align-items-center justify-content-center mb-2"
+                              style="
+                                width: 56px;
+                                height: 56px;
+                                background: radial-gradient(
+                                  circle at 30% 20%,
+                                  #eef2ff,
+                                  #7396f620
+                                );
+                                color: #ffae1f;
+                                font-weight: 700;
+                              "
+                            >
+                              B
+                            </div>
+                            <h5 class="fw-bold text-dark mb-0">Bu Siti</h5>
+                            <div
+                              class="d-flex align-items-center justify-content-center mt-1"
+                            >
+                              <i class="ti ti-phone me-1 text-muted"></i>
+                              <small class="text-muted">0812-3456-7890</small>
+                            </div>
+                          </div>
+
+                          <!-- Alamat tujuan (simple & clean) -->
+                          <div
+                            class="p-3 rounded-4 mb-3"
+                            style="
+                              background-color: #f5f7ff;
+                              border: 1px solid rgba(93, 135, 255, 0.15);
+                            "
+                          >
+                            <small
+                              class="text-muted text-uppercase fw-semibold d-block mb-1"
+                              style="font-size: 0.65rem"
+                            >
+                              Alamat Tujuan
+                            </small>
+
+                            <div class="d-flex align-items-start gap-2 mb-2">
+                              <i class="ti ti-map-pin text-primary mt-1"></i>
+                              <span style="font-size: 0.8rem">
+                                Jl. Melati No. 5 (Depan Pos Satpam)
+                              </span>
+                            </div>
+
+                            <a
+                              href="https://maps.google.com"
+                              target="_blank"
+                              class="btn btn-sm w-100 rounded-pill fw-semibold"
+                              style="
+                                background-color: #ffae1f;
+                                color: #fff;
+                                font-size: 0.8rem;
+                              "
+                            >
+                              <i class="ti ti-map-2 me-1"></i> Buka Maps
+                            </a>
+                          </div>
+
+                          <!-- Tagihan -->
+                          <div
+                            class="d-flex justify-content-between align-items-center mb-3 border-top pt-2 ps-1"
+                          >
+                            <small class="text-muted">Tagihan</small>
+                            <span
+                              class="badge rounded-pill px-3 py-1"
+                              style="
+                                background-color: #fff1f1;
+                                color: #f04438;
+                                font-size: 0.75rem;
+                              "
+                            >
+                              Belum Lunas (Rp 35.000)
+                            </span>
+                          </div>
+
+                          <!-- Slider: Paket diterima? -->
+                          <div class="mt-auto ps-1">
+                            <div
+                              class="slider-container position-relative bg-white rounded-pill overflow-hidden"
+                              style="height: 52px; border: 1px solid #ffae1f"
+                              data-color="#ffae1f"
+                            >
+                              <div
+                                class="slider-text position-absolute w-100 h-100 d-flex align-items-center justify-content-center fw-semibold small"
+                                style="z-index: 1; pointer-events: none"
+                              >
+                                GESER UNTUK DIANTAR
+                              </div>
+
+                              <input
+                                type="range"
+                                class="form-range slider-action w-100 h-100 position-absolute opacity-0"
+                                min="0"
+                                max="100"
+                                value="0"
+                                step="1"
+                                style="z-index: 5; cursor: pointer"
+                              />
+
+                              <div
+                                class="slider-fill h-100 position-absolute top-0 start-0 rounded-pill"
+                                style="
+                                  width: 0%;
+                                  background-color: #ffae1f;
+                                  transition: width 0.05s;
+                                "
+                              ></div>
+
+                              <div
+                                class="slider-thumb bg-white rounded-circle position-absolute top-50 translate-middle-y shadow-sm d-flex align-items-center justify-content-center"
+                                style="
+                                  width: 42px;
+                                  height: 42px;
+                                  left: 4px;
+                                  transition: left 0.05s;
+                                  z-index: 4;
+                                  color: #ffae1f;
+                                  border: 1px solid rgba(255, 174, 31, 1);
+                                "
+                              >
+                                <i class="ti ti-check fs-5"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Kurir Sedang Jalan 1 End -->
+                    </div>
+                  </div>
+                </div>
+                <!-- Logistik Kurir Sedang Jalan End -->
+
+                <!-- Logistik Kurir Selesai Diantar Start -->
+                <div class="tab-pane fade" id="pills-selesai" role="tabpanel">
+                  <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                      <!-- Kurir Selesai Antar 1 Start -->
+                      <div
+                        class="card h-100 position-relative overflow-hidden border-0"
+                        style="
+                          border-radius: 24px;
+                          box-shadow: 0 20px 45px rgba(15, 23, 42, 0.06);
+                        "
+                      >
+                        <!-- Strip kiri biru -->
+                        <div
+                          class="position-absolute top-0 start-0 h-100"
+                          style="
+                            width: 6px;
+                            background: linear-gradient(
+                              to bottom,
+                              #20b486,
+                              #fff
+                            );
+                          "
+                        ></div>
+
+                        <div
+                          class="card-body p-4 d-flex flex-column"
+                          style="height: 420px"
+                        >
+                          <!-- Header: INV + status -->
+                          <div
+                            class="d-flex justify-content-between align-items-center mb-3 ps-1"
+                          >
+                            <span
+                              class="badge rounded-pill px-3 py-1"
+                              style="
+                                background-color: #eef2ff;
+                                color: #20b486;
+                                border: 1px solid rgba(93, 135, 255, 0.25);
+                                font-size: 0.75rem;
+                              "
+                            >
+                              #INV-006
+                            </span>
+
+                            <span
+                              class="badge rounded-pill px-3 py-1 fw-semibold"
+                              style="
+                                background-color: #20b486;
+                                color: #ffffff;
+                                font-size: 0.75rem;
+                              "
+                            >
+                              SELESAI DIANTAR
+                            </span>
+                          </div>
+
+                          <!-- Avatar + nama -->
+                          <div class="text-center mb-3">
+                            <div
+                              class="rounded-circle d-inline-flex align-items-center justify-content-center mb-2"
+                              style="
+                                width: 56px;
+                                height: 56px;
+                                background: radial-gradient(
+                                  circle at 30% 20%,
+                                  #eef2ff,
+                                  #7396f620
+                                );
+                                color: #20b486;
+                                font-weight: 700;
+                              "
+                            >
+                              B
+                            </div>
+                            <h5 class="fw-bold text-dark mb-0">Bu Siti</h5>
+                            <div
+                              class="d-flex align-items-center justify-content-center mt-1"
+                            >
+                              <i class="ti ti-phone me-1 text-muted"></i>
+                              <small class="text-muted">0812-3456-7890</small>
+                            </div>
+                          </div>
+
+                          <!-- Alamat tujuan (simple & clean) -->
+                          <div
+                            class="p-3 rounded-4 mb-3"
+                            style="
+                              background-color: #f5f7ff;
+                              border: 1px solid rgba(93, 135, 255, 0.15);
+                            "
+                          >
+                            <small
+                              class="text-muted text-uppercase fw-semibold d-block mb-1"
+                              style="font-size: 0.65rem"
+                            >
+                              Alamat Tujuan
+                            </small>
+
+                            <div class="d-flex align-items-start gap-2 mb-2">
+                              <i class="ti ti-map-pin text-primary mt-1"></i>
+                              <span style="font-size: 0.8rem">
+                                Jl. Melati No. 5 (Depan Pos Satpam)
+                              </span>
+                            </div>
+
+                            <a
+                              href="https://maps.google.com"
+                              target="_blank"
+                              class="btn btn-sm w-100 rounded-pill fw-semibold"
+                              style="
+                                background-color: #20b486;
+                                color: #fff;
+                                font-size: 0.8rem;
+                              "
+                            >
+                              <i class="ti ti-map-2 me-1"></i> Buka Maps
+                            </a>
+                          </div>
+
+                          <!-- Tagihan -->
+                          <div
+                            class="d-flex justify-content-between align-items-center mb-3 border-top pt-2 ps-1"
+                          >
+                            <small class="text-muted">Tagihan</small>
+                            <span
+                              class="badge rounded-pill px-3 py-1"
+                              style="
+                                background-color: #e6fff7;
+                                color: #16a34a;
+                                font-size: 0.75rem;
+                              "
+                            >
+                              LUNAS
+                            </span>
+                          </div>
+
+                          <!-- Status bawah (ganti slider) -->
+                          <div class="mt-auto ps-2">
+                            <button
+                              type="button"
+                              class="w-100 border-0 fw-semibold"
+                              style="
+                                padding: 10px 14px;
+                                border-radius: 999px;
+                                background-color: #e6fff7;
+                                color: #20b486;
+                                font-size: 0.85rem;
+                              "
+                            >
+                              SELESAI
                             </button>
                           </div>
                         </div>
                       </div>
+                      <!-- Kurir Selesai Antar 1 End -->
                     </div>
                   </div>
                 </div>
+                <!-- Logistik Kurir Selesai Diantar End -->
               </div>
             </div>
           </div>
@@ -607,11 +1163,16 @@
                 alert("Status: Delivering!");
                 window.location.reload();
               } else {
+                // BATAL → RESET SAMA KAYA GAGAL
                 this.value = 0;
-                this.parentElement.querySelector(".slider-fill").style.width =
-                  "0%";
-                this.parentElement.querySelector(".slider-thumb").style.left =
-                  "4px";
+                let p = this.parentElement;
+                p.querySelector(".slider-fill").style.width = "0%";
+                p.querySelector(".slider-thumb").style.left = "4px";
+
+                let c = getSliderColor(p);
+                p.querySelector(
+                  ".slider-text"
+                ).style.backgroundImage = `linear-gradient(to right, #ffffff 0%, ${c} 0%)`;
               }
             }
           });
