@@ -160,7 +160,7 @@
               <li class="sidebar-item">
                 <a
                   class="sidebar-link"
-                  href="./ui-buttons.html"
+                  href="./ui-forms.html"
                   aria-expanded="false"
                 >
                   <span>
@@ -348,27 +348,23 @@
         <!--  Header End -->
 
         <div class="container-fluid">
+          <!-- Banner Start -->
           <div
-            class="card bg-light-info shadow-none position-relative overflow-hidden mb-4"
+            class="card bg-light shadow-none position-relative overflow-hidden mb-4"
           >
             <div class="card-body px-4 py-3">
               <div class="row align-items-center">
                 <div class="col-9">
                   <h4 class="fw-semibold mb-8">Kasir & Transaksi</h4>
-                  <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item">
-                        <a class="text-muted" href="#">Dashboard</a>
-                      </li>
-                      <li class="breadcrumb-item" aria-current="page">
-                        Kasir & Transaksi
-                      </li>
-                    </ol>
-                  </nav>
+                  <p class="mb-0 text-muted">
+                    Area kasir dan transaksi untuk user disini.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
+          <!-- Banner End -->
+
           <!-- Card Start -->
           <div class="card">
             <div class="card-body">
@@ -531,6 +527,7 @@
                         </div>
                       </div>
 
+                      <!-- Modal Tambah Pelanggan Start -->
                       <div
                         class="modal fade"
                         id="modalTambahPelanggan"
@@ -626,7 +623,9 @@
                           </div>
                         </div>
                       </div>
+                      <!-- Modal Tambah Pelanggan Start -->
 
+                      <!-- Card Keranjang Cucian Start -->
                       <div
                         class="flex-grow-1 overflow-auto pe-1"
                         style="max-height: 350px"
@@ -686,10 +685,8 @@
                                 <span class="fw-bold text-primary small"
                                   >Rp 35.000</span
                                 >
-                                <button
-                                  class="btn btn-sm btn-light-danger text-danger p-1 rounded border-0"
-                                >
-                                  <i class="ti ti-trash fs-5"></i>
+                                <button class="btn btn-sm btn-outline-danger">
+                                  <i class="ti ti-trash"></i>
                                 </button>
                               </div>
                             </div>
@@ -716,7 +713,9 @@
                           <i class="ti ti-cash me-2"></i> Proses Pembayaran
                         </button>
                       </div>
+                      <!-- Card Keranjang Cucian End -->
 
+                      <!-- Modal Proses Pembayara Start -->
                       <div
                         class="modal fade"
                         id="modalBayar"
@@ -954,6 +953,7 @@
                           </div>
                         </div>
                       </div>
+                      <!-- Modal Proses Pembayara End -->
 
                       <script>
                         // Fungsi Ubah Qty lewat Tombol +/-
