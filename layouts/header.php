@@ -7,6 +7,13 @@
   <title>Modernize Free</title>
   <link rel="shortcut icon" type="image/png" href="assets/images/logos/favicon.png" />
   <link rel="stylesheet" href="assets/css/styles.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <!-- CSS khusus halaman -->
+  <?php if (!empty($currentRoute['css'])): ?>
+    <?php foreach ($currentRoute['css'] as $cssFile): ?>
+      <link rel="stylesheet" href="<?= $cssFile; ?>">
+    <?php endforeach; ?>
+  <?php endif; ?>
 </head>
 
 <body>

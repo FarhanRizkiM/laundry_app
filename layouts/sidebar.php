@@ -18,7 +18,7 @@
                     <span class="hide-menu">Beranda</span>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="./index.php" aria-expanded="false">
+                    <a class="sidebar-link" href="index.php?page=dashboard" aria-expanded="false">
                         <span>
                             <i class="ti ti-layout-dashboard"></i>
                         </span>
@@ -30,23 +30,15 @@
                     <span class="hide-menu">Operasional</span>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="./ui-buttons.html" aria-expanded="false">
-                        <span>
-                            <i class="ti ti-user"></i>
-                        </span>
-                        <span class="hide-menu">Data Pelanggan</span>
-                    </a>
-                </li>
-                <li class="sidebar-item">
-                    <a class="sidebar-link" href="./ui-buttons.html" aria-expanded="false">
+                    <a class="sidebar-link" href="index.php?page=transaksi" aria-expanded="false">
                         <span>
                             <i class="ti ti-cash"></i>
                         </span>
-                        <span class="hide-menu">Kasir & Transaksi</span>
+                        <span class="hide-menu">Transaksi</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
+                    <a class="sidebar-link" href="index.php?page=produksi" aria-expanded="false">
                         <span>
                             <i class="ti ti-wash-machine"></i>
                         </span>
@@ -54,85 +46,65 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="./ui-card.html" aria-expanded="false">
+                    <a class="sidebar-link" href="index.php?page=kurir" aria-expanded="false">
                         <span>
-                            <i class="ti ti-truck-loading"></i>
+                            <i class="ti ti-truck-delivery"></i>
                         </span>
-                        <span class="hide-menu">Logistik</span>
+                        <span class="hide-menu">Kurir</span>
                     </a>
                 </li>
                 <li class="nav-small-cap">
                     <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-                    <span class="hide-menu">Manajemen</span>
+                    <span class="hide-menu">Manajemen Toko</span>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="./ui-typography.html" aria-expanded="false">
+                    <a class="sidebar-link" href="index.php?page=data-pelanggan" aria-expanded="false">
+                        <span>
+                            <i class="ti ti-user"></i>
+                        </span>
+                        <span class="hide-menu">Data Pelanggan</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="index.php?page=data-karyawan" aria-expanded="false">
+                        <span>
+                            <i class="ti ti-users-group"></i>
+                        </span>
+                        <span class="hide-menu">Data Karyawan</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="index.php?page=katalog-layanan" aria-expanded="false">
+                        <span>
+                            <i class="ti ti-library"></i>
+                        </span>
+                        <span class="hide-menu">Katalog Layanan</span>
+                    </a>
+                </li>
+                <li class="nav-small-cap">
+                    <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                    <span class="hide-menu">Pembukuan</span>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="index.php?page=laporan-keuangan" aria-expanded="false">
                         <span>
                             <i class="ti ti-file-description"></i>
                         </span>
-                        <span class="hide-menu">Laporan</span>
+                        <span class="hide-menu">Laporan Keuangan</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="./ui-forms.html" aria-expanded="false">
+                    <a class="sidebar-link" href="index.php?page=riwayat-transaksi" aria-expanded="false">
                         <span>
-                            <i class="ti ti-database"></i>
+                            <i class="ti ti-calendar-dollar"></i>
                         </span>
-                        <span class="hide-menu">Master Data</span>
+                        <span class="hide-menu">Riwayat Transaksi</span>
                     </a>
                 </li>
-                <!-- <li class="nav-small-cap">
+                <li class="nav-small-cap">
                     <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-                    <span class="hide-menu">AUTH</span>
                 </li>
-                <li class="sidebar-item">
-                    <a class="sidebar-link" href="pages/login.php" aria-expanded="false">
-                        <span>
-                            <i class="ti ti-login"></i>
-                        </span>
-                        <span class="hide-menu">Login</span>
-                    </a>
-                </li>
-                <li class="sidebar-item">
-                    <a class="sidebar-link" href="pages/register.php" aria-expanded="false">
-                        <span>
-                            <i class="ti ti-user-plus"></i>
-                        </span>
-                        <span class="hide-menu">Register</span>
-                    </a>
-                </li> -->
-                <!-- <li class="nav-small-cap">
-                    <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-                    <span class="hide-menu">EXTRA</span>
-                </li>
-                <li class="sidebar-item">
-                    <a class="sidebar-link" href="./icon-tabler.html" aria-expanded="false">
-                        <span>
-                            <i class="ti ti-fidget-spinner"></i>
-                        </span>
-                        <span class="hide-menu">Icons</span>
-                    </a>
-                </li>
-                <li class="sidebar-item">
-                    <a class="sidebar-link" href="./sample-page.html" aria-expanded="false">
-                        <span>
-                            <i class="ti ti-aperture"></i>
-                        </span>
-                        <span class="hide-menu">Sample Page</span>
-                    </a>
-                </li> -->
             </ul>
-            <!-- <div class="unlimited-access hide-menu bg-light-primary position-relative mb-7 mt-5 rounded">
-                <div class="d-flex">
-                    <div class="unlimited-access-title me-3">
-                        <h6 class="fw-semibold fs-4 mb-6 text-dark w-85">Upgrade to pro</h6>
-                        <a href="https://adminmart.com/product/modernize-bootstrap-5-admin-template/" target="_blank" class="btn btn-primary fs-2 fw-semibold lh-sm">Buy Pro</a>
-                    </div>
-                    <div class="unlimited-access-img">
-                        <img src="assets/images/backgrounds/rocket.png" alt="" class="img-fluid">
-                    </div>
-                </div>
-            </div> -->
         </nav>
         <!-- End Sidebar navigation -->
     </div>

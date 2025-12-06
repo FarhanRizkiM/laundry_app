@@ -1,0 +1,38 @@
+/* CSS Tambahan untuk Tampilan Premium */
+.card-premium {
+  border: none;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-premium:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+.badge-soft {
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+}
+.info-box {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+}
+.info-label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #adb5bd;
+  margin-bottom: 4px;
+  display: block;
+}
+.info-value {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #343a40;
+}

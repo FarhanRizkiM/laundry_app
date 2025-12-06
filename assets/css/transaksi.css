@@ -1,0 +1,50 @@
+/* EFEK HOVER UNTUK KARTU PRODUK */
+.hover-card {
+  transition: all 0.3s ease-in-out; /* Animasi halus 0.3 detik */
+  border: 2px solid transparent; /* Border transparan default */
+}
+
+.hover-card:hover {
+  transform: translateY(-5px); /* Geser ke atas 5 pixel */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important; /* Bayangan lebih tebal */
+  border-color: var(--bs-primary); /* (Opsional) Border jadi biru */
+}
+
+/* EFEK HOVER UNTUK ICON DI DALAM KARTU */
+.hover-card:hover .rounded-circle {
+  background-color: var(--bs-primary) !important; /* Lingkaran jadi biru */
+  color: white !important; /* Icon jadi putih */
+  transition: all 0.3s;
+}
+
+.hover-card:hover i {
+  color: white !important;
+}
+
+/* EFEK HOVER TOMBOL FILTER (Pills) */
+.rounded-pill:hover {
+  transform: scale(1.05); /* Membesar sedikit */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hilangkan panah di Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hilangkan panah di Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Class khusus untuk menghilangkan scrollbar */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

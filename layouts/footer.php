@@ -6,6 +6,12 @@
 <script src="assets/libs/apexcharts/dist/apexcharts.min.js"></script>
 <script src="assets/libs/simplebar/dist/simplebar.js"></script>
 <script src="assets/js/dashboard.js"></script>
+<!-- JS khusus halaman (jika ada) -->
+<?php if (!empty($currentRoute['js'])): ?>
+    <?php foreach ($currentRoute['js'] as $jsFile): ?>
+        <script src="<?= $jsFile; ?>"></script>
+    <?php endforeach; ?>
+<?php endif; ?>
 </body>
 
 </html>
